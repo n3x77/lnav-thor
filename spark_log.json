@@ -1,0 +1,39 @@
+{
+	"spark_log" : {
+		"title"			: "SPARK log format",
+		"description"	: "Version 0.1 - Sven Püschel - January 2019 - Log format used by the THOR APT-Scanner created by Nextron Systems",
+		"url"			: "https://www.nextron-systems.com/spark/",
+        "level-field": "level",
+        "timestamp-field": "timestamp",
+        "level-field": "level",
+        "level": {
+            "debug": "Debug",
+            "info": "Info",
+            "stats": "Notice",
+            "error": "Warning",
+            "critical": "Alert",
+            "fatal": "Error"
+        },
+        "body-field": "message",
+        "module-field": "module",
+        "regex" : {
+			"basic"		: {
+                "module-format": false,
+				"pattern" : "^(?<timestamp>\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z) (?<fqdn>[0-9a-zA-Z\\.\\-\\_]+)(\\/(?<ipaddress>\\b\\d{1,3}.\\d{1,3}.\\d{1,3}.\\d{1,3}\\b))* (?<scanner>SPARK)[:] (?<level>\\w+)[:] MODULE[:] (?<module>\\w+) MESSAGE[:] (?<message>[[:print:]]+)"
+			}
+		},
+        "value" : {
+            "fqdn" : { "kind": "string", "identifier": true},
+            "ipaddress" : { "kind": "string", "identifier": true},
+            "scanner" : { "kind": "string", "identifier": true},
+            "level" : { "kind": "string", "identifier": true},
+            "module" : { "kind": "string", "identifier": true},
+            "message" : { "kind": "string", "identifier": false}
+        },
+        "sample" : [
+            {
+                "line": "2019-01-19T01:00:06Z system.domain.com/127.0.0.1 SPARK: Info: MODULE: ProcessCheck MESSAGE: Checking process NAME: java PID: 21647 CMD: /usr/java/jdk1.8.0_25/bin/java (..)"
+            }
+      ]
+	}
+}
