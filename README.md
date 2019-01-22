@@ -18,9 +18,9 @@ http://lnav.org is a powerful log file viewer , designed to take multiple log fi
 
 Big Thanks to Paul Wayper! He presented lnav at the Linux.conf.au in 2016 and wrote a lot of custom formats for the tool.
 
-The recording of his alk can be found here, which also includes a short into into lnav: [Paul Wayper - Using lnav - linux.conf.au 2016](https://www.youtube.com/watch?v=D9Tox1ysPXE)
+The recording of his talk and the short into into lnav can be found here: [Paul Wayper - Using lnav - linux.conf.au 2016](https://www.youtube.com/watch?v=D9Tox1ysPXE)
 
-His github repo includes a lof of useful other log formats: [PaulWay/lnav-formats](https://github.com/PaulWay/lnav-formats)
+His github repository includes a lof of useful other log formats: [PaulWay/lnav-formats](https://github.com/PaulWay/lnav-formats)
 
 ## THOR & SPARK
 
