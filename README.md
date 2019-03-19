@@ -46,3 +46,5 @@ lnav registers the new logformat and creates a copy of the files in the `$HOME/.
 
 Afterwars open the THOR/SPARK report file with lnav and the syntax will be highlighted. Also various fields will be extracted and can be used in queries in lnav.
 To show this fields just scroll onto the line and press 'p' for "Pretty printing".
+
+**Note**: If you recognize empty lines between the single thor entries, you have to convert the windows line breaks <CR><LF> to your corresponding os format. On Linux and Mac us can use dos2unix for the conversion.
